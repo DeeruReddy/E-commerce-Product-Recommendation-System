@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Fwitch</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Fwitch</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-content">
+    <div class="container">
+      <h2>About Fwitch</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://via.placeholder.com/500x300?text=Our+Story" alt="Our Story">
+        </div>
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>Founded in 2025, Fwitch started with a simple mission: to make online shopping easy, affordable, and enjoyable for everyone.</p>
+          <p>What began as a small startup has now grown into a trusted online marketplace offering a wide variety of products across multiple categories.</p>
+          <p>At Fwitch store, we believe in providing our customers with high-quality products, exceptional service, and a seamless shopping experience.</p>
+        </div>
+      </div>
+      
+      <div class="about-values">
+        <h3>Our Values</h3>
+        <div class="values-grid">
+          <div class="value-item">
+            <i class="fas fa-star"></i>
+            <h4>Quality</h4>
+            <p>We carefully select our products to ensure they meet our high standards of quality and durability.</p>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-user-shield"></i>
+            <h4>Trust</h4>
+            <p>Building trust with our customers is at the core of everything we do, from secure transactions to reliable service.</p>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-heart"></i>
+            <h4>Customer Satisfaction</h4>
+            <p>Your satisfaction is our priority. We strive to exceed your expectations with every purchase.</p>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-leaf"></i>
+            <h4>Sustainability</h4>
+            <p>We're committed to reducing our environmental impact through sustainable practices and eco-friendly options.</p>
+          </div>
+        </div>
+      </div>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will be loaded here -->
+      </div>
+      <div class="cart-total">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn" class="btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Fwitch</h3>
+          <p>Your one-stop shop for all your needs.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@fwitch.com</p>
+          <p>Phone: +91 1234567890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FWitch. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
