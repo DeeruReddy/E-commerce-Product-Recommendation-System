@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Your Online Store</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Fwitch</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Welcome to Fwitch</h2>
+        <p>Discover amazing products at unbeatable prices</p>
+        <a href="products.html" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-categories">
+    <div class="container">
+      <h2>Shop by Category</h2>
+      <div class="categories">
+        <div class="category">
+          <img src="https://img.freepik.com/premium-photo/high-angle-view-digital-camera-table_1048944-23315823.jpg?semt=ais_hybrid" alt="Electronics">
+          <h3>Electronics</h3>
+
+          <a href="products.html?category=electronics" class="btn-small">View</a>
+        </div>
+        <div class="category">
+          <img src="https://www.cato.org/sites/cato.org/files/styles/aside_3x/public/2023-11/fast-fashion2.jpeg?itok=72ek8bxI" alt="Clothing">
+          <h3>Clothing</h3>
+          <a href="products.html?category=clothing" class="btn-small">View</a>
+        </div>
+        <div class="category">
+          <img src="https://assets.architecturaldigest.in/photos/6045cf4607b8c2a9c90a31cc/16:9/w_2560%2Cc_limit/modular-kitchen-accessories-design-interiors.jpg" alt="Home & Kitchen">
+          <h3>Home & Kitchen</h3>
+          <a href="products.html?category=home" class="btn-small">View</a>
+        </div>
+        <div class="category">
+          <img src="https://t4.ftcdn.net/jpg/02/73/55/33/360_F_273553300_sBBxIPpLSn5iC5vC8FwzFh6BJDKvUeaC.jpg" alt="Beauty">
+          <h3>Beauty</h3>
+          <a href="products.html?category=beauty" class="btn-small">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div id="featured-products" class="products">
+        <!-- Products will be loaded here via JavaScript -->
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recommendations">
+    <div class="container">
+      <h2>Recommended for You</h2>
+      <div id="recommended-products" class="products">
+        <!-- Recommendations will be loaded here via JavaScript -->
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Fwitch</h3>
+          <p>Your one-stop shop for all your needs.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@fwitch.com</p>
+          <p>Phone: +91 1234567890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FWitch. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will be loaded here -->
+      </div>
+      <div class="cart-total">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn" class="btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
